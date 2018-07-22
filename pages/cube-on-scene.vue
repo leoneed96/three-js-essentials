@@ -69,8 +69,8 @@ export default {
       plane.receiveShadow = true;
       plane.rotation.x = -0.5 * Math.PI;
       plane.position.y = -2;
-      var spotLight = new THREE.SpotLight("0xffffff");
-      spotLight.position.set(10, 20, 20);
+      var spotLight = new THREE.SpotLight(0xffffff, 1.7);
+      spotLight.position.set(20, 20, 20);
       spotLight.castShadow = true;
       this.scene.add(spotLight);
       this.scene.add(this.mesh, plane);
